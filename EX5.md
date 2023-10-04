@@ -14,7 +14,7 @@
 
 ### Program:
 ```
-CREATE TABLE employed(
+CREATE TABLE employee2(
   empid NUMBER,
   empname VARCHAR2(10),
   dept VARCHAR2(10),
@@ -30,8 +30,9 @@ CREATE TABLE sal_log (
   update_date DATE
 );
 -- Insert the values in the employee table
-insert into employedd values(1,'Shakthi','IT',1000000);
-insert into employedd values(2,'Suji','SALES',500000)
+insert into employee2 values(1,'John','HR',50000);
+insert into employee2 values(2,'Joe','IT',60000);
+insert into employee2 values(3,'Bob','Finance',55000);
 ```
 
 ### Create employee table
