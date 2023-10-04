@@ -58,9 +58,10 @@ CREATE TABLE sal_log (
 
 
 ### PLSQL Trigger code
-![image](https://github.com/SanjithaBolisetti/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119393633/9e86aa6f-ac23-4d51-a825-29f1bbe09f2c)
+![image](https://github.com/SanjithaBolisetti/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119393633/a5a46faf-00db-47f5-9a27-fecd3cb1e94d)
 
-
+### Output
+![image](https://github.com/SanjithaBolisetti/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119393633/bca0fce8-b602-4540-81bd-f4eea7dc2fa8)
 
 ### Result:
 Thus , the output has been successfully verified.
