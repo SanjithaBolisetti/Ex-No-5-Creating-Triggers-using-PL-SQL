@@ -14,46 +14,23 @@
 
 ### Program:
 ```
-CREATE TABLE employee2(
-  empid NUMBER,
-  empname VARCHAR2(10),
-  dept VARCHAR2(10),
-  salary NUMBER
-);
+CREATE TABLE employee2( empid NUMBER,empname VARCHAR2(10),dept VARCHAR2(10),salary NUMBER);
 
-CREATE TABLE sal_log (
-  log_id NUMBER GENERATED ALWAYS AS IDENTITY,
-  empid NUMBER,
-  empname VARCHAR2(10),
-  old_salary NUMBER,
-  new_salary NUMBER,
-  update_date DATE
-);
--- Insert the values in the employee table
+CREATE TABLE sal_log (log_id NUMBER GENERATED ALWAYS AS IDENTITY, empid NUMBER, empname VARCHAR2(10), old_salary NUMBER, new_salary NUMBER,update_date DATE);
+
 insert into employee2 values(1,'John','HR',50000);
 insert into employee2 values(2,'Joe','IT',60000);
 insert into employee2 values(3,'Bob','Finance',55000);
 ```
 
 ### Create employee table
-```CREATE TABLE employed(
-  empid NUMBER,
-  empname VARCHAR2(10),
-  dept VARCHAR2(10),
-  salary NUMBER
-);
+```
+CREATE TABLE employed(empid NUMBER, empname VARCHAR2(10), dept VARCHAR2(10), salary NUMBER);
 ```
 
 ### Create salary_log table
 ```
-CREATE TABLE sal_log (
-  log_id NUMBER GENERATED ALWAYS AS IDENTITY,
-  empid NUMBER,
-  empname VARCHAR2(10),
-  old_salary NUMBER,
-  new_salary NUMBER,
-  update_date DATE
-);
+CREATE TABLE sal_log (log_id NUMBER GENERATED ALWAYS AS IDENTITY,empid NUMBER,empname VARCHAR2(10),old_salary NUMBER,new_salary NUMBER,update_date DATE);
 ```
 
 
