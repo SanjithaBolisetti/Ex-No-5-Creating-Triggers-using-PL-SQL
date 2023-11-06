@@ -1,4 +1,5 @@
 # Ex. No: 5 Creating Triggers using PL/SQL
+Date:
 
 ### AIM: To create a Trigger using PL/SQL.
 
@@ -35,7 +36,24 @@ CREATE TABLE sal_log (log_id NUMBER GENERATED ALWAYS AS IDENTITY,empid NUMBER,em
 
 
 ### PLSQL Trigger code
-![image](https://github.com/SanjithaBolisetti/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119393633/a5a46faf-00db-47f5-9a27-fecd3cb1e94d)
+```
+CREATE OR REPLACE TRIGGER log_salary1_update
+  2  BEFORE UPDATE ON employee2
+  3  FOR EACH ROW
+  4  DECLARE
+  5    old_salary NUMBER;
+  6    new_salary NUMBER;
+  7  BEGIN
+  8    old_salary := :OLD.salary;
+  9    new_salary := :NEW.salary;
+ 10    IF old_salary <> new_salary THEN
+ 11      INSERT INTO sal_log1(empid, empname, old_salary, new_salary, update_date)
+ 12      VALUES(:OLD.empid, :OLD.empname, old_salary, new_salary, SYSDATE);
+ 13    END IF;
+ 14  END;
+ 15  /
+
+update employee2 set salary= 89000 where empid=2;
 
 ### Output
 ![image](https://github.com/SanjithaBolisetti/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119393633/bca0fce8-b602-4540-81bd-f4eea7dc2fa8)
