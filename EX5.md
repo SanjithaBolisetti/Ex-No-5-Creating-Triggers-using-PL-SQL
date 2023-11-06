@@ -54,7 +54,7 @@ CREATE OR REPLACE TRIGGER log_salary1_update
  15  /
 
 update employee2 set salary= 89000 where empid=2;
-
+```
 ### Output
 ![image](https://github.com/SanjithaBolisetti/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/119393633/bca0fce8-b602-4540-81bd-f4eea7dc2fa8)
 
